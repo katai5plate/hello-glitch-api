@@ -1,0 +1,2 @@
+# hello-glitch-api
+GlitchでハローワールドするためのAPI
