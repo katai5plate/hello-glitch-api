@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
     ...localDB,
     {
       count,
-      ip: req.ip,
+      headers: req.headers,
       query: req.query,
       time: new Date().toISOString(),
     },
