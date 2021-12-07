@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
   });
 });
 
-app.get("/log", (res) => {
+app.get("/log", (req, res) => {
   res.json({
     hello: "world",
     bootTime: bootDate,
