@@ -26,3 +26,11 @@ app.get("/", (req, res) => {
     db: localDB,
   });
 });
+
+app.get("/log", (res) => {
+  res.json({
+    hello: "world",
+    bootTime: bootDate,
+    db: localDB,
+  });
+});
