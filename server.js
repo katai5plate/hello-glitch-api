@@ -1,4 +1,5 @@
 const app = require("express")();
+require("dotenv").config();
 
 let localDB = [];
 let count = 0;
@@ -33,4 +34,15 @@ app.get("/log", (req, res) => {
     bootTime: bootDate,
     db: localDB,
   });
+});
+
+app.get("/admin", (req, res) => {
+  if (req.headers["x-hidden-code"] === process.env.HIDDEN_CODE) {
+    res.json({
+      hello: "admin!",
+    });
+  } else {
+    res.status(404);
+    res.end("invalid");
+  }
 });

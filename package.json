@@ -6,6 +6,7 @@
   "author": "katai5plate <katai5plate.sub@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "express": "^4.17.1"
   },
   "scripts": {
