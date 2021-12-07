@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
       query: req.query,
       time: new Date().toISOString(),
     },
-  ].slice(-5);
+  ].slice(-20);
   res.json({
     hello: "world",
     bootTime: bootDate,
